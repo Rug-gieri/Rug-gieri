@@ -1,0 +1,15 @@
+//Algoritmos e estrutura de dados III, o basico do basico
+//Algoritmos sao capazes de realizar tarefas como: 
+//Ler e escrever dados 
+//Avaliar expressoes algebricas, relacionais e logicas
+//Tomar decisoes com base nos resultados das expressoes avaliadas
+//Repetir um conjunto de acordo com uma condição 
+
+#include <iostream>
+
+int main() {
+    // Write C++ code here
+    std::cout << "Try programiz.pro";
+
+    return 0;
+}
