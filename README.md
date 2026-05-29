@@ -1,4 +1,4 @@
-# Olá, eu sou o Rodrigo Gieri 👋
+# Olá, eu sou o Rafael Ruggieri 
 
 Desenvolvedor full stack em formação contínua, atualmente estagiando na **Secretaria de Economia Municipal de Porto Velho (SEMEC)** — Departamento de Inovação e Integração.
 
@@ -24,24 +24,12 @@ Trabalho no dia a dia construindo interfaces modernas com Next.js, integrações
 ## 🚀 Projetos entregues
 
 ### 📄 Geração automática de PDFs
-Páginas de formulários com geração automática de documentos PDF — usados internamente na SEMEC para agilizar processos administrativos.  
+Páginas de formulários com geração automática de documentos PDF — usados na SEMEC para agilizar processos administrativos.  
 `Next.js` `React` `TypeScript` `Tailwind CSS`
 
 ### 🤖 Chatbot com integração de IA
 Front-end de chatbot integrado a um LLM, desenvolvido para uso interno na secretaria.  
 `Next.js` `Claude API` `TypeScript` `Tailwind CSS`
-
----
-
-## ⚙️ Workflow de desenvolvimento com IA
-
-```
-1. Decomposição   →  Linear + Claude  (planejamento e escopo)
-2. Implementação  →  Cursor + Claude  (código)
-3. Pesquisa       →  Gemini           (libs, docs, referências)
-4. Paralelização  →  opencode         (tarefas de agente em paralelo)
-5. PR + Review    →  GitHub + Claude  (qualidade e revisão)
-```
 
 ---
 
