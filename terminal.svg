@@ -1,47 +1,46 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 720" width="680" height="720">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 590" width="680" height="590">
   <defs>
     <style>
-      .bg { fill: #1e1e2e; }
-      .titlebar { fill: #313244; }
-      .text { font-family: 'Fira Code', 'Courier New', monospace; font-size: 13px; fill: #cdd6f4; }
-      .prompt { fill: #a6e3a1; font-weight: bold; }
-      .cmd { fill: #89b4fa; }
-      .key { fill: #cba6f7; }
-      .val { fill: #cdd6f4; }
-      .dir { fill: #89dceb; }
-      .dim { fill: #6c7086; }
-      .cursor { fill: #cdd6f4; }
-      .dot-red { fill: #f38ba8; }
-      .dot-yellow { fill: #f9e2af; }
-      .dot-green { fill: #a6e3a1; }
+      .bg { fill: #05070d; }
+      .titlebar { fill: #0b0f19; }
+      .text {
+        font-family: 'JetBrains Mono', 'Fira Code', 'Cascadia Code', 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace;
+        font-size: 13px;
+        fill: #e5e7eb;
+        font-variant-ligatures: none;
+        letter-spacing: 0;
+      }
+      .prompt { fill: #22c55e; font-weight: bold; }
+      .cmd { fill: #60a5fa; }
+      .key { fill: #c084fc; }
+      .val { fill: #e5e7eb; }
+      .dir { fill: #67e8f9; }
+      .dim { fill: #7c8596; }
+      .cursor { fill: #f8fafc; }
+      .dot-red { fill: #fb7185; }
+      .dot-yellow { fill: #facc15; }
+      .dot-green { fill: #4ade80; }
     </style>
   </defs>
 
-  <!-- Janela do terminal -->
-  <rect width="680" height="720" rx="10" class="bg"/>
+  <rect width="680" height="590" rx="10" class="bg"/>
 
-  <!-- Barra de título -->
   <rect width="680" height="38" rx="10" class="titlebar"/>
   <rect y="28" width="680" height="10" class="titlebar"/>
 
-  <!-- Dots -->
   <circle cx="22" cy="19" r="6" class="dot-red"/>
   <circle cx="42" cy="19" r="6" class="dot-yellow"/>
   <circle cx="62" cy="19" r="6" class="dot-green"/>
 
-  <!-- Título da janela -->
   <text x="340" y="24" text-anchor="middle" class="text dim">rug@semec: ~</text>
 
-  <!-- Conteúdo -->
-  <!-- whoami -->
-  <text x="24" y="72" class="text"><tspan class="prompt">❯</tspan> <tspan class="cmd">whoami</tspan></text>
+  <text x="24" y="72" class="text"><tspan class="prompt">❯</tspan> <tspan class="cmd">who am I</tspan></text>
 
   <text x="24" y="94" class="text"><tspan class="key">  name      </tspan><tspan class="dim">→  </tspan><tspan class="val">Rafael Ruggieri</tspan></text>
   <text x="24" y="112" class="text"><tspan class="key">  role      </tspan><tspan class="dim">→  </tspan><tspan class="val">Dev Full Stack</tspan></text>
   <text x="24" y="130" class="text"><tspan class="key">  local     </tspan><tspan class="dim">→  </tspan><tspan class="val">Porto Velho, RO 🇧🇷</tspan></text>
   <text x="24" y="148" class="text"><tspan class="key">  empresa   </tspan><tspan class="dim">→  </tspan><tspan class="val">SEMEC · Inovação e Integração</tspan></text>
 
-  <!-- stack -->
   <text x="24" y="180" class="text"><tspan class="prompt">❯</tspan> <tspan class="cmd">cat</tspan> <tspan class="dir">stack.json</tspan></text>
 
   <text x="24" y="202" class="text"><tspan class="key">  frontend  </tspan><tspan class="dim">→  </tspan><tspan class="val">Next.js · React · TypeScript · Tailwind</tspan></text>
@@ -50,7 +49,6 @@
   <text x="24" y="256" class="text"><tspan class="key">  infra     </tspan><tspan class="dim">→  </tspan><tspan class="val">Vercel · Linux · GitHub</tspan></text>
   <text x="24" y="274" class="text"><tspan class="key">  agentes   </tspan><tspan class="dim">→  </tspan><tspan class="val">Cursor · Opencode</tspan></text>
 
-  <!-- projetos -->
   <text x="24" y="306" class="text"><tspan class="prompt">❯</tspan> <tspan class="cmd">ls</tspan> <tspan class="dir">projetos/</tspan></text>
 
   <text x="24" y="328" class="text"><tspan class="dir">  📄 pdf-forms/       </tspan><tspan class="dim">formulários com geração automática de PDF</tspan></text>
@@ -58,19 +56,16 @@
   <text x="24" y="368" class="text"><tspan class="dir">  🤖 chatbot-ui/      </tspan><tspan class="dim">front-end de chatbot com integração LLM</tspan></text>
   <text x="24" y="386" class="text"><tspan class="dim">                      Next.js · Claude API · TypeScript</tspan></text>
 
-  <!-- sobre -->
-  <text x="24" y="544" class="text"><tspan class="prompt">❯</tspan> <tspan class="cmd">cat</tspan> <tspan class="dir">sobre.txt</tspan></text>
+  <text x="24" y="420" class="text"><tspan class="prompt">❯</tspan> <tspan class="cmd">cat</tspan> <tspan class="dir">sobre.txt</tspan></text>
 
-  <text x="24" y="566" class="text"><tspan class="key">  formação   </tspan><tspan class="dim">→  </tspan><tspan class="val">Sistemas de Informação · Unisapiens</tspan></text>
-  <text x="24" y="584" class="text"><tspan class="key">  certs      </tspan><tspan class="dim">→  </tspan><tspan class="val">DIO · Fiber School · Fundação Bradesco</tspan></text>
-  <text x="24" y="602" class="text"><tspan class="key">  background </tspan><tspan class="dim">→  </tspan><tspan class="val">helpdesk · redes · pós-venda telecom</tspan></text>
+  <text x="24" y="442" class="text"><tspan class="key">  formação   </tspan><tspan class="dim">→  </tspan><tspan class="val">Sistemas de Informação · Unisapiens</tspan></text>
+  <text x="24" y="460" class="text"><tspan class="key">  certs      </tspan><tspan class="dim">→  </tspan><tspan class="val">DIO · Fiber School · Fundação Bradesco</tspan></text>
+  <text x="24" y="478" class="text"><tspan class="key">  background </tspan><tspan class="dim">→  </tspan><tspan class="val">helpdesk · redes · pós-venda telecom</tspan></text>
 
-  <!-- contato -->
-  <text x="24" y="634" class="text"><tspan class="prompt">❯</tspan> <tspan class="cmd">echo</tspan> <tspan class="val">$CONTATO</tspan></text>
+  <text x="24" y="510" class="text"><tspan class="prompt">❯</tspan> <tspan class="cmd">echo</tspan> <tspan class="val">$CONTATO</tspan></text>
 
-  <text x="24" y="656" class="text"><tspan class="key">  github    </tspan><tspan class="dim">→  </tspan><tspan class="val">github.com/Rug-gieri</tspan></text>
-  <text x="24" y="674" class="text"><tspan class="key">  linkedin  </tspan><tspan class="dim">→  </tspan><tspan class="val">linkedin.com/in/rug-gieri</tspan></text>
+  <text x="24" y="532" class="text"><tspan class="key">  github    </tspan><tspan class="dim">→  </tspan><tspan class="val">github.com/Rug-gieri</tspan></text>
+  <text x="24" y="550" class="text"><tspan class="key">  linkedin  </tspan><tspan class="dim">→  </tspan><tspan class="val">linkedin.com/in/rug-gieri</tspan></text>
 
-  <!-- cursor -->
-  <text x="24" y="706" class="text"><tspan class="prompt">❯</tspan> <tspan class="cursor">▌</tspan></text>
+  <text x="24" y="578" class="text"><tspan class="prompt">❯</tspan> <tspan class="cursor">▌</tspan></text>
 </svg>
