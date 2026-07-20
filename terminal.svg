@@ -1,71 +1,58 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 590" width="680" height="590">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 130" width="680" height="130">
   <defs>
     <style>
-      .bg { fill: #05070d; }
-      .titlebar { fill: #0b0f19; }
+      .bg { fill: #121212; }
+      .titlebar { fill: #2a2a2a; }
       .text {
         font-family: 'JetBrains Mono', 'Fira Code', 'Cascadia Code', 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace;
         font-size: 13px;
-        fill: #e5e7eb;
+        fill: #e0e0e0;
         font-variant-ligatures: none;
         letter-spacing: 0;
       }
-      .prompt { fill: #22c55e; font-weight: bold; }
-      .cmd { fill: #60a5fa; }
-      .key { fill: #c084fc; }
-      .val { fill: #e5e7eb; }
-      .dir { fill: #67e8f9; }
-      .dim { fill: #7c8596; }
-      .cursor { fill: #f8fafc; }
-      .dot-red { fill: #fb7185; }
-      .dot-yellow { fill: #facc15; }
-      .dot-green { fill: #4ade80; }
+      .prompt { fill: #a0a0a0; font-weight: bold; }
+      .cmd { fill: #d0d0d0; }
+      .key { fill: #b0b0b0; }
+      .val { fill: #e0e0e0; }
+      .dim { fill: #808080; }
     </style>
   </defs>
 
-  <rect width="680" height="590" rx="10" class="bg"/>
+  <!-- Fundo da janela -->
+  <rect width="680" height="130" rx="10" class="bg"/>
 
+  <!-- Barra de título -->
   <rect width="680" height="38" rx="10" class="titlebar"/>
   <rect y="28" width="680" height="10" class="titlebar"/>
 
-  <circle cx="22" cy="19" r="6" class="dot-red"/>
-  <circle cx="42" cy="19" r="6" class="dot-yellow"/>
-  <circle cx="62" cy="19" r="6" class="dot-green"/>
+  <!-- Título à esquerda -->
+  <text x="24" y="24" text-anchor="start" class="text dim">rug@semec: ~</text>
 
-  <text x="340" y="24" text-anchor="middle" class="text dim">rug@semec: ~</text>
+  <!-- Botões estilo 8‑bit / pixel art -->
+  <!-- Minimizar (linha horizontal em pixels) -->
+  <rect x="612" y="12" width="16" height="16" rx="0" fill="#555" stroke="#888" stroke-width="2"/>
+  <rect x="616" y="20" width="8" height="2" fill="#aaa"/>
 
+  <!-- Maximizar (quadrado com borda pixelada) -->
+  <rect x="632" y="12" width="16" height="16" rx="0" fill="#555" stroke="#888" stroke-width="2"/>
+  <rect x="625" y="15" width="10" height="10" fill="none" stroke="#aaa" stroke-width="2"/>
+
+  <!-- Fechar (X com pixels diagonais) -->
+  <rect x="652" y="12" width="16" height="16" rx="0" fill="#555" stroke="#888" stroke-width="2"/>
+  <!-- X centralizado feito com pixels -->
+  <rect x="666" y="16" width="2" height="2" fill="#aaa"/>
+  <rect x="674" y="16" width="2" height="2" fill="#aaa"/>
+  <rect x="668" y="18" width="2" height="2" fill="#aaa"/>
+  <rect x="672" y="18" width="2" height="2" fill="#aaa"/>
+  <rect x="670" y="20" width="2" height="2" fill="#aaa"/>
+  <rect x="670" y="22" width="2" height="2" fill="#aaa"/>
+  <rect x="668" y="24" width="2" height="2" fill="#aaa"/>
+  <rect x="672" y="24" width="2" height="2" fill="#aaa"/>
+  <rect x="666" y="26" width="2" height="2" fill="#aaa"/>
+  <rect x="674" y="26" width="2" height="2" fill="#aaa"/>
+
+  <!-- Conteúdo do terminal -->
   <text x="24" y="72" class="text"><tspan class="prompt">❯</tspan> <tspan class="cmd">who am I</tspan></text>
-
   <text x="24" y="94" class="text"><tspan class="key">  name      </tspan><tspan class="dim">→  </tspan><tspan class="val">Rafael Ruggieri</tspan></text>
-  <text x="24" y="112" class="text"><tspan class="key">  role      </tspan><tspan class="dim">→  </tspan><tspan class="val">Dev Full Stack</tspan></text>
-  <text x="24" y="130" class="text"><tspan class="key">  local     </tspan><tspan class="dim">→  </tspan><tspan class="val">Porto Velho, RO, BR 🇧🇷</tspan></text>
-  <text x="24" y="148" class="text"><tspan class="key">  empresa   </tspan><tspan class="dim">→  </tspan><tspan class="val">SEMEC · Inovação e Integração</tspan></text>
-
-  <text x="24" y="180" class="text"><tspan class="prompt">❯</tspan> <tspan class="cmd">cat</tspan> <tspan class="dir">stack.json</tspan></text>
-
-  <text x="24" y="202" class="text"><tspan class="key">  frontend  </tspan><tspan class="dim">→  </tspan><tspan class="val">Next.js · React · TypeScript · Tailwind</tspan></text>
-  <text x="24" y="220" class="text"><tspan class="key">  backend   </tspan><tspan class="dim">→  </tspan><tspan class="val">Node.js · PostgreSQL · Qdrant</tspan></text>
-  <text x="24" y="238" class="text"><tspan class="key">  ia/llms   </tspan><tspan class="dim">→  </tspan><tspan class="val">Claude API · Gemini API</tspan></text>
-  <text x="24" y="256" class="text"><tspan class="key">  infra     </tspan><tspan class="dim">→  </tspan><tspan class="val">Vercel · Linux · GitHub</tspan></text>
-  <text x="24" y="274" class="text"><tspan class="key">  agentes   </tspan><tspan class="dim">→  </tspan><tspan class="val">Cursor · Opencode</tspan></text>
-
-  <text x="24" y="306" class="text"><tspan class="prompt">❯</tspan> <tspan class="cmd">ls</tspan> <tspan class="dir">projetos/</tspan></text>
-
-  <text x="24" y="328" class="text"><tspan class="dir">  📄 pdf-forms/       </tspan><tspan class="dim">formulários com geração automática de PDF</tspan></text>
-  <text x="24" y="346" class="text"><tspan class="dim">                      Next.js · TypeScript · Tailwind</tspan></text>
-  <text x="24" y="368" class="text"><tspan class="dir">  🤖 chatbot-ui/      </tspan><tspan class="dim">front-end de chatbot com integração LLM</tspan></text>
-  <text x="24" y="386" class="text"><tspan class="dim">                      Next.js · Claude API · TypeScript</tspan></text>
-
-  <text x="24" y="420" class="text"><tspan class="prompt">❯</tspan> <tspan class="cmd">cat</tspan> <tspan class="dir">sobre.txt</tspan></text>
-
-  <text x="24" y="442" class="text"><tspan class="key">  formação   </tspan><tspan class="dim">→  </tspan><tspan class="val">Sistemas de Informação · Unisapiens</tspan></text>
-  <text x="24" y="460" class="text"><tspan class="key">  certs      </tspan><tspan class="dim">→  </tspan><tspan class="val">DIO · Fiber School · Fundação Bradesco</tspan></text>
-  <text x="24" y="478" class="text"><tspan class="key">  background </tspan><tspan class="dim">→  </tspan><tspan class="val">helpdesk · redes · pós-venda telecom</tspan></text>
-
-  <text x="24" y="510" class="text"><tspan class="prompt">❯</tspan> <tspan class="cmd">echo</tspan> <tspan class="val">$CONTATO</tspan></text>
-
-  <text x="24" y="532" class="text"><tspan class="key">  github    </tspan><tspan class="dim">→  </tspan><tspan class="val">github.com/Rug-gieri</tspan></text>
-  <text x="24" y="550" class="text"><tspan class="key">  linkedin  </tspan><tspan class="dim">→  </tspan><tspan class="val">linkedin.com/in/rug-gieri</tspan></text>
-
-  <text x="24" y="578" class="text"><tspan class="prompt">❯</tspan> <tspan class="cursor">▌</tspan></text>
+  <text x="24" y="112" class="text"><tspan class="key">  role      </tspan><tspan class="dim">→  </tspan><tspan class="val">Software Developer</tspan></text>
 </svg>
